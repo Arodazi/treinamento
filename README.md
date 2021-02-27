@@ -27,6 +27,7 @@ O mysql.connector é um driver para persistência de dados. Sob licença GPL.
 
 Foi realizado um backup do banco de dados com o auxílio da ferramenta phpMyAdmin, gerando o arquivo "treinamento.sql", contendo toda a estrutura da database "treinamento", já preenchida com alguns dados modelo. Para uso da aplicação, o backup deve
 ser importado para o banco de dados mySQL com o uso de uma ferramenta de preferência do usuário.
+O banco de dados por padrão está configurado com user = "root" e senha vazia passwd = "". Caso o banco de dados do usuário use configurações diferentes, os arquivos "controle.py", "gerenciar_cafes.py" e "gerenciar_salas.py" devem ter seus dados referentes à persistência de dados alterados para conexão com o banco de dados.
 
 ## EXECUÇÃO DO CÓDIGO
 
