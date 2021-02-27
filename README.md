@@ -2,7 +2,7 @@
 
 ## DESCRIÇÃO
 
-  Será realizado um treinamento para uma empresa de TI. O treinamento será realizado em 2 etapas e as pessoas serão divididas em salas com lotação variável. 
+Será realizado um treinamento para uma empresa de TI. O treinamento será realizado em 2 etapas e as pessoas serão divididas em salas com lotação variável. 
 Serão realizados também dois intervalos de café em 2 espaços distintos. O presente sistema gerenciará este evento.
 
 ## PRINCIPAIS FUNCIONALIDADES
@@ -17,11 +17,11 @@ Serão realizados também dois intervalos de café em 2 espaços distintos. O pr
 
 Para execução do sistema é necessário possuir as bibliotecas PyQt5 e mysql.connector
 
-O PyQt5 é uma ferramenta utilizada para desenvolvimento de interfaces voltada para Python, desenvolvida em código aberto. Sua licença é GPLV3, com acesso em https://pypi.org/project/PyQt5/
+O PyQt5 é uma ferramenta utilizada para desenvolvimento de interfaces voltada para Python, desenvolvida em código aberto. Sua licença é GPLV3.
 
-O mysql.connector é um driver para persistência de dados. Instalação realizada pelo comando "pip install mysql-connector-python" no terminal.
+O mysql.connector é um driver para persistência de dados. Sob licença GPL.
 
-O sistema apresenta na tela inicial as opções de cadastro disponíveis, um botão de distribuição de alunos e um botão de consulta.
+
 
 ## BANCO DE DADOS
 
@@ -31,14 +31,43 @@ ser importado para o banco de dados mySQL com o uso de uma ferramenta de prefer�
 ## EXECUÇÃO DO CÓDIGO
 
 Para execução do código, serão necessários:
-* Instalação do Python3.9
-* Instalação das bibliotecas
+* Python 3.9
+* MySQL
+* PyQT5
+* MySQL Connector
+
+## Como rodar a aplicação
+
+* Instalar o Python pelo site oficial, e adicionar nas variáveis de ambiente:https://www.python.org/
+
+* Clonar ou fazer o download do projeto:
+```
+    git clone https://github.com/Arodazi/treinamento/tree/master
+```
+
+* Importar o arquivo 'treinamento.sql' para o MySQL por meio de uma ferramenta gerenciadora de banco de dados;
+
+* Instalar as bibliotecas pela linha de comando:
+    * PYQT5
+    
+    ```
+        pip install PyQt5
+    ```
+
+    * MySQL Connector
+    ```
+        pip install mysql-connector-python
+    ```
+
+* Abrir a pasta do projeto com a IDE de sua escolha, e executar o arquivo 'controle.py'
 
 ## TESTES
 
 O código foi compilado com a IDE Visual Studio Code, pelo comando "Run Code", no arquivo "controle.py".
 
 ## USO DA INTERFACE
+
+O sistema apresenta na tela inicial as opções de cadastro disponíveis, um botão de distribuição de alunos e um botão de consulta.
 
 ### CADASTRO DE PESSOA
 
